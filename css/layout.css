@@ -1578,6 +1578,37 @@ video {
   width: 100%;
 }
 
+/*--------------------------------------------------
+    [Blog Medium Resources Page]
+----------------------------------------------------*/
+
+.blog-post-item {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.blog-post-item:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+.blog-img-container {
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  height: 250px;
+  width: 100%;
+}
+
+.blog-post-item img {
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%;
+}
+
 /*------------------------------------------------------------------
   	[Text Colors]
 ------------------------------------------------------------------*/
