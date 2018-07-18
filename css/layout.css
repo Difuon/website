@@ -1131,11 +1131,13 @@ fieldset[disabled] .btn-theme {
   border: 1px solid #ABB0B2 ;
   color: #fff;
   background-color: rgba(155,155,155, 0.5);
-  padding: .7em 9em .7em 1em;
+  padding: .7em 3em .7em 1em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 20px;
-  display: inline-block; margin: 0; } /* Input Styles */
+  display: inline-block; margin: 0;
+  width: 400px;
+} /* Input Styles */
 
 #mce-EMAIL::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -1184,7 +1186,7 @@ fieldset[disabled] .btn-theme {
   }
 
   #mce-EMAIL {
-    padding: .7em 0 .7em 1em;
+    padding: .7em 1em;
     width: 96%;
     margin: 0;
   }
