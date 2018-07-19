@@ -1119,12 +1119,17 @@ fieldset[disabled] .btn-theme {
     [Mailchimp Form]
 ------------------------------------------------------------------*/
 
+.mailchimp-holder {
+  float:none !important;
+  padding-left: 0px !important;
+}
+
 #mc_embed_signup {
   border: none;
   width: 100%; } /* Signup form container */
 
 .mc-field-group {
-  display: inline-block; } /* positions input field horizontally */
+  display: inline-block !important; } /* positions input field horizontally */
 
 #mce-EMAIL {
   font-family: Roboto, sans-serif;
@@ -1135,8 +1140,9 @@ fieldset[disabled] .btn-theme {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 20px;
-  display: inline-block; margin: 0;
-  width: 400px;
+  display: inline-block;
+  margin: 0;
+  width: 75%;
 } /* Input Styles */
 
 #mce-EMAIL::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1145,7 +1151,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .clear {
-  display: inline-block; } /* positions button horizontally in line with input */
+  display: inline-block !important; } /* positions button horizontally in line with input */
 
 #mc_embed_signup .button {
   font-family: Roboto, sans-serif;
@@ -1303,12 +1309,12 @@ video {
 }
 
 .p-main-title {
-  width: 60%;
+  width: 100%;
 }
 
 .main-telegram {
   color: #fff;
-  margin: 20px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
   height: 20px;
   vertical-align: middle;
 }
