@@ -139,9 +139,6 @@
             </div>
         </div>
         End Contact List -->
-
-        <!-- Google Map -->
-        <div id="map" class="map height-400"></div>
         
         <!-- General Questions -->
         <div class="content-lg container">
@@ -155,22 +152,29 @@
             <div class="row">
                 <div class="col-sm-6 sm-margin-b-50">
                     <div class="margin-b-30">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enimet minim veniam magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.</p>
+                        <p>If our FAQ page doesn’t answer your questions, please submit your question on the form here. Reach out to our team, we are happy to answer questions and point you in the right direction. </p>
                     </div>
                     
                 </div>
                 <div class="col-sm-6">
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg">Submit</button>
-                    </div>
+                    <form action="https://formspree.io/contact@difuon.com" method="POST">
+                            <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
+                            <input type="email" name=”_replyto” class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <!-- <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required> -->
+                            <textarea name="message" class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+                            <input type="hidden" name="_next" value="difuon.com/contact-success" />
+                            <input type="hidden" name="_subject" value="New Difuon Contact Form" />
+                            <input style="display:none;" type="text" name="_gotcha" style="display:none" />
+                            <button type="submit" value="send" class="btn-theme btn-theme-sm btn-base-bg">Submit</button>
+                    </form>
                 </div>
             </div>
             <!--// end row -->
         </div>
         <!-- End General Questions -->
+
+        <!-- Google Map -->
+        <div id="map" class="map height-400"></div>
 
         
         <!--========== END PAGE LAYOUT ==========-->
