@@ -5,3 +5,6 @@ RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 ErrorDocument 404 https://difuon.com/not-found-page
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
